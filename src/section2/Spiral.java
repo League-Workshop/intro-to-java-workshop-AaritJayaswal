@@ -20,6 +20,21 @@ public class Spiral {
 			// 2. Turn the robot 360/7 degrees to the right
 		
 			// 8. Set the pen width to i
-			
+		Robot joe = new Robot();
+		joe.sparkle();
+		joe.penDown();
+		joe.setPenColor(255,255,000);
+		joe.setSpeed(5000);
+		for (int i=0; i<340;i++) {
+		joe.move(4);
+		joe.turn(1);}
+		joe.turn(2);
+		for (int i=0; i<340;i++) {
+			joe.move(3);
+			joe.turn(1);}
+		joe.turn(2);
+		for (int i=0; i<340;i++) {
+			joe.move(2);
+			joe.turn(1);}
 	}
 }

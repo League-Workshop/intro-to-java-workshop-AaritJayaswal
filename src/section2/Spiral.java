@@ -1,40 +1,99 @@
 package section2;
 
+import javax.swing.JOptionPane;
+
 import org.jointheleague.graphical.robot.Robot;
 
 public class Spiral {
 
 	public static void main(String[] args) {
-		// 1. Create a new Robot
 		
-		// 5. Set your robot's pen down 
 		
-		// 3. Set the robot to go at max speed (100)
-		
-		// 4. Use a for loop to repeat steps #7 to #8, 75 times
-		
-			// 7. Change the pen color to random
-		
-			// 6. Move the robot 5 times the loop counter (5*i)
-			
-			// 2. Turn the robot 360/7 degrees to the right
-		
-			// 8. Set the pen width to i
 		Robot joe = new Robot();
 		joe.sparkle();
 		joe.penDown();
 		joe.setPenColor(255,255,000);
-		joe.setSpeed(5000);
-		for (int i=0; i<340;i++) {
-		joe.move(4);
-		joe.turn(1);}
-		joe.turn(2);
-		for (int i=0; i<340;i++) {
-			joe.move(3);
-			joe.turn(1);}
-		joe.turn(2);
-		for (int i=0; i<340;i++) {
-			joe.move(2);
-			joe.turn(1);}
+		joe.setSpeed(100);
+		
+		
+		
+		String shape = JOptionPane.showInputDialog(null,"Would you like to make a spiral or a regular shape?");
+		if(shape.equals("spiral")) {
+			
+			
+		
+		
+		String spiral = JOptionPane.showInputDialog(null,"Would you like to create a square spiral or a circle spiral?");
+		if(spiral.equals("square spiral")) {
+		
+	
+				
+	 
+	for (int r=0; r<300; r+=15) {
+		
+		for (int i=0; i<2;i++) {
+			
+		joe.move(0+r);
+		joe.turn(90);
+		
+		
+		}
 	}
+				
+	joe.penUp();
+	joe.move(400);
+		}
+		
+		if(spiral.equals("circle spiral")) {
+			 
+			for (int r=0; r<20; r++) {
+				
+				for (int i=0; i<20;i++) {
+					
+				joe.move(0+r);
+				joe.turn(9
+						);
+				}
+			}
+						
+			joe.penUp();
+			joe.move(400);}
+					
+		}	
+		else {
+			JOptionPane.showMessageDialog(null,"Sorry, that is not an option.");
+			
+		}
+			
+		if (shape.equals("regular shape")) {
+			
+			String rshape = JOptionPane.showInputDialog("Would you like to make a square or a circle?");
+			
+			if(rshape.equals("square")) {
+				for(int s = 0; s<4; s++) {	
+			
+				joe.move(200);
+				joe.turn(90);
+				}
+				joe.penUp();
+				joe.move(400);
+				}
+			if(rshape.equals("circle")) {
+			for(int c=0; c<90; c++) {
+				
+				joe.move(4);
+				joe.turn(4);
+			}
+				
+			joe.penUp();
+			joe.move(400);	
+			}
+		}
+		else {
+			JOptionPane.showMessageDialog(null," Sorry, that is not an option.");
+		}
+		
+		
+		}
 }
+

@@ -31,9 +31,9 @@ for (int i =0; i<4; i++) {
 	void drawSquare() {
 		JOptionPane.showMessageDialog(null, "yay! you called the drawSquare() method!");
 		/* 3. Fill in the code to draw a square inside the method below. */
-		for (int i =0; i<4; i++) {
+		for (int i =0; i<6; i++) {
 			bob.move(100);
-			bob.turn(90);
+			bob.turn(60);
 		
 		}
 		
